@@ -87,7 +87,7 @@ track.addEventListener('transitionend', () => {
 
 function resetAuto() {
   clearInterval(autoTimer);
-  autoTimer = setInterval(nextSlide, 5000); // 5 секунд
+  autoTimer = setInterval(nextSlide, 15000); // 5 секунд
 }
 
 // Обработчики кнопок
@@ -170,3 +170,4 @@ window.addEventListener('resize', () => {
 resetAuto();
 
 updateSlide();
+
