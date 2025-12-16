@@ -128,7 +128,7 @@ leftZone.addEventListener('click', () => {
     if (dx > width*0.2) prevSlide();
     else if (dx < -width*0.2) nextSlide();
     else updateSlide();
-    autoTimer = setInterval(nextSlide, 5000);
+    autoTimer = setInterval(nextSlide, 15000);
   });
 
   // Touch события
@@ -155,7 +155,7 @@ leftZone.addEventListener('click', () => {
     if (dx > width*0.2) prevSlide();
     else if (dx < -width*0.2) nextSlide();
     else updateSlide();
-    autoTimer = setInterval(nextSlide, 5000);
+    autoTimer = setInterval(nextSlide, 15000);
   }, {passive:true});
 })();
 
@@ -168,4 +168,5 @@ window.addEventListener('resize', () => {
 
 // Старт
 resetAuto();
+
 updateSlide();
